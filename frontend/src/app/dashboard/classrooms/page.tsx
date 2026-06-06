@@ -6,7 +6,8 @@ import { useAuthStore } from '../../../store/authStore';
 import api from '../../../services/api';
 
 export default function ClassroomsPage() {
-  const { user, role } = useAuthStore();
+  const { user } = useAuthStore();
+  const role = user?.role ?? '';
   const [classrooms, setClassrooms] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
