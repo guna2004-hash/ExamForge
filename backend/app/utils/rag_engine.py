@@ -19,10 +19,8 @@ except ImportError:
 
 # Try to import sentence-transformers for real embeddings
 try:
-    from sentence_transformers import SentenceTransformer
-    import numpy as np
-    # Initialize a tiny, fast model
-    embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+    embedding_model = None
+    np = None
     logger.info("SentenceTransformer model loaded successfully.")
 except ImportError:
     embedding_model = None
