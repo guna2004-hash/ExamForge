@@ -10,7 +10,7 @@ export default function StudyPlanPage() {
   const [studyPlan, setStudyPlan] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const role = useAuthStore(state => state.role);
+  const role = useAuthStore(state => state.user?.role ?? '');
 
   const generatePlan = async () => {
     setLoading(true);
