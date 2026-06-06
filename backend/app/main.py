@@ -33,11 +33,13 @@ async def debug_exception_handler(request: Request, exc: Exception):
     )
 
 # CORS configuration
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "https://exam-forge-u2we.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
