@@ -52,7 +52,7 @@ def generate_exam_ai(req: ExamGenerateRequest) -> Dict[str, Any]:
             client = genai.Client(api_key=settings.GEMINI_API_KEY)
             # Use structured schema mode
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
@@ -122,7 +122,7 @@ def evaluate_subjective_answer_ai(question_text: str, model_answer: str, student
 
             client = genai.Client(api_key=settings.GEMINI_API_KEY)
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.0-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
