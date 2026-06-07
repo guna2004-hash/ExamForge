@@ -1,4 +1,4 @@
-# AegisExam - AI-Powered Online Exam Generator
+# ExamForge- AI-Powered Online Exam Generator
 
 A highly polished, resume-worthy, and production-ready full-stack AI application designed to revolutionize the way examinations are generated, taken, and evaluated. AegisExam leverages the power of Large Language Models (LLMs) to automatically generate comprehensive exams, evaluate subjective/coding answers, and provide actionable analytics for both students and teachers.
 
